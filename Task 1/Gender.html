@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gender Input</title>
+  </head>
+  <body>
+    <h2>Gender Input</h2>
+
+    <label for="gender">Select Gender:</label><br />
+    <select id="gender">
+      <option value=" ">select</option>
+      <option value="male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+    <br /><br />
+    <button onclick="openpage()">Submit</button>
+    <script>
+      function openpage() {
+        let gender = document.getElementById("gender").value;
+
+        if (gender === "male") {
+          window.open("https://www.google.com", "_blank");
+        } else if (gender === "Female") {
+          window.open("https://www.bing.com", "_blank");
+        } else {
+          alert("Please select gender");
+        }
+      }
+    </script>
+  </body>
+</html>

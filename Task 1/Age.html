@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Input</title>
+  </head>
+  <body>
+    <h2>User Input</h2>
+    <label for="age">Enter your age:</label><br />
+    <input type="text" name="age" id="age" placeholder="Enter Your Age" />
+    <br /><br />
+    <button onclick="openlink()">Submit</button>
+    <script>
+      function openlink() {
+        let age = document.getElementById("age").value;
+        if (age >= 18) {
+          // IF age is equal or greater than 18 then google will open when click on submit
+          window.open("https://www.google.com", "_blank");
+        } else {
+          //IF age is less than 18 then wikipedia will open when click on submit
+          window.open("https://www.wikipedia.org", "_blank");
+        }
+      }
+    </script>
+  </body>
+</html>

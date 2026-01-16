@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <h2>Simple Calculator</h2>
+    <label>Input first number</label><br />
+    <input type="number" id="num1" placeholder="Enter first number" />
+    <br /><br />
+    <label>Input second number</label><br />
+    <input type="number" id="num2" placeholder="Enter second number" />
+    <br /><br />
+    <button onclick="calculate()">Calculate</button><br />
+    <script>
+      function calculate() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+
+        let add = a + b;
+        let subtract = a - b;
+        let multiply = a * b;
+        let division = a / b;
+        let modulus = a % b;
+        console.log(
+          "Addition:",
+          add,
+          "Subtraction:",
+          subtract,
+          "Multiplication:",
+          multiply,
+          "Division:",
+          division,
+          "Modulus:",
+          modulus
+        );
+      }
+    </script>
+  </body>
+</html>
